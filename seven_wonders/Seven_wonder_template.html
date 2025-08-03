@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="seven_wonder_design.css">
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="container-fluid bg-container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row w-100 h-100">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="tourism-card text-center p-4">
+                        <p class="paragraph">Journey Through the Timeless Wonders</p>
+                        <button class="animated-button" onclick="display('sectionFavouritePlaces')">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="favourite-places-heading">Seven wonders of the world</h1>
+                    </div>
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionGreatWallofChinaDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Great wall of china</h1>
+                            <p class="favourite-place-card-description">
+                                A timeless dragon of stone winding through the heart of China’s mountains.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754040426/858cbd1cfa499ca1e631d6ef92f4d70f_hwd3ij.jpg" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionPetraDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Petra</h1>
+                            <p class="favourite-place-card-description">
+                                Petra sleeps in the heart of the desert, where stone facades glow with the colors of dawn and ancient trade whispers through canyon walls.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754041012/Things-to-Do-in-Petra-Ad-Deir-Trail-Wide-View_md3ft2.webp" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionChristtheRedeemerDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Christ the Redeemer</h1>
+                            <p class="favourite-place-card-description">
+                                Arms open wide, he watches over Rio with grace and glory from the heavens.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754041187/download_zcvr0c.jpg" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionMachuPicchuDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Machu Picchu</h1>
+                            <p class="favourite-place-card-description">
+                                Machu Picchu, perched high in the misty Andes of Peru, is a breathtaking lost city of the Incas that echoes with ancient mystery, architectural brilliance, and the spirit of a forgotten civilization.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042172/473780-machu-picchu-ultra-hd-desktop-background-wallpaper-for-4k-uhd-tv-widescreen-ultrawide-desktop-laptop-tablet-smartphone_v2flgc.jpg" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionChichenitzaDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Chichen itza</h1>
+                            <p class="favourite-place-card-description ">
+                                A Mayan pyramid and temple complex that was a hub of politics and astronomy.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042423/istockphoto-537243905-612x612_synyen.jpg" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3 mr-5" onclick="display('sectionRomanColosseumDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Roman Colosseum</h1>
+                            <p class="favourite-place-card-description">
+                                A grand amphitheater in Rome used for gladiator contests and public spectacles.
+                            </p>
+                        </div>
+                        <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042613/beautiful-shot-famous-roman-colosseum-amphitheater-breathtaking-sky-sunrise_181624-6998_p7lnb5.avif" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                    <div class="favourite-place-card-container d-flex flex-row col-12 col-md-6 col-lg-3  mr-5" onclick="display('sectionTajMahalDetailedView')">
+                        <div class="mr-1">
+                            <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                            <p class="favourite-place-card-description">
+                                If there was just one symbol to represent all of India, it would be the
+                                Taj Mahal
+                            </p>
+                        </div>
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+                    </div>
+                    <br />
+                </div>
+            </div>
+            <br />
+
+            <button class="btn btn-dark ml-2 mb-2" onclick="display('sectionHome')">back</button>
+
+        </div>
+    </div>
+    <div id="sectionGreatWallofChinaDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754040426/858cbd1cfa499ca1e631d6ef92f4d70f_hwd3ij.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754043533/0a21ca209a71f1c0404da30411be770f_whrlck.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754043406/pexels-jplenio-1423580_j5x23j.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Great wall of china</h1>
+                    <p class="detailed-view-card-description">
+                        The Great Wall of China is one of the most awe-inspiring architectural feats in human history. Stretching over 21,000 kilometers, it winds through mountains, valleys, deserts, and plateaus, standing as a silent witness to centuries of Chinese civilization. Originally constructed to protect various dynasties from northern invasions, it evolved over time into a symbol of strength, unity, and resilience.
+
+                        Built over many centuries—mainly during the Ming Dynasty—the wall was crafted using stone, brick, tamped earth, and wood, often by soldiers, peasants, and prisoners. It’s not just a single wall, but a vast network of fortifications, watchtowers, and military posts. From the rugged mountain ridges of Hebei to the sands of the Gobi Desert, the wall adapts to the terrain with remarkable engineering precision.
+
+                        Though much of it has weathered and eroded over time, key sections have been preserved and attract millions of visitors each year. Walking along the Great Wall is like stepping back in time—every step whispers stories of dynasties, battles, and an enduring will to defend a culture.
+
+                        More than just stone and mortar, the Great Wall represents the perseverance of a nation and stands today as a UNESCO World Heritage Site, inspiring wonder in all who gaze upon its mighty expanse. <a href="https://simple.wikipedia.org/wiki/Great_Wall_of_China">Great_wall_of_china</a> </p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionChristtheRedeemerDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754041187/download_zcvr0c.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754049072/pexels-4fly-rj-1461715-2818895_oteuqt.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754049112/787639_z2y54d.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Christ the Redeemer </h1>
+                    <p class="detailed-view-card-description">
+                        Christ the Redeemer (Cristo Redentor) stands tall atop the Corcovado Mountain in Rio de Janeiro, arms outstretched in a powerful gesture of peace and protection. Towering at 30 meters (98 feet), with an additional 8-meter pedestal, this majestic statue overlooks the vibrant city and the glistening waters of Guanabara Bay.
+
+                        Unveiled in 1931, it was built as a symbol of faith and unity, designed by Brazilian engineer Heitor da Silva Costa and sculpted by French artist Paul Landowski. Made of reinforced concrete and covered in soapstone, the statue has become one of the most recognizable landmarks in the world.
+
+                        From a distance, Christ appears to embrace the city, offering calm amidst the hustle of urban life and the rhythm of samba. By night, it glows softly against the sky; by day, it stands bathed in sunlight, often shrouded in mystical clouds.
+
+                        More than just a monument, it represents the deep-rooted Christian heritage of Brazil and the warmth of its people. Declared one of the New Seven Wonders of the World, Christ the Redeemer continues to inspire awe and spiritual reflection in millions of visitors every year. <a href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)">Christ_the_Redeemer</a></p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="tajMahalCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#tajMahalCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#tajMahalCarousel" data-slide-to="1"></li>
+                        <li data-target="#tajMahalCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#tajMahalCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#tajMahalCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                        The Taj Mahal, located in Agra, India, is one of the most breathtaking symbols of love ever created. Commissioned in 1632 by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, it stands as a timeless tribute to eternal devotion.
+
+                        Built entirely of gleaming white marble, the structure is renowned for its perfect symmetry, intricate carvings, and delicate inlay work of precious stones. As the sun moves across the sky, the Taj changes hues—from soft pink at dawn to dazzling white in the afternoon and golden under moonlight.
+
+                        The central dome rises like a pearl, flanked by graceful minarets and reflected in the long pool of its formal Mughal gardens. Inside lies the tombs of Mumtaz and Shah Jahan, wrapped in quiet beauty and reverence.
+
+                        The Taj Mahal is not just a monument, but a masterpiece of Mughal architecture, blending Persian, Islamic, and Indian styles. Recognized as a UNESCO World Heritage Site and one of the New Seven Wonders of the World, it continues to mesmerize millions of visitors with its poetry in stone and the story of love it carries through centuries. <a href="https://en.wikipedia.org/wiki/Taj_Mahal">Taj Mahal</a>
+                    </p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionPetraDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="PetraCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#PetraCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#PetraCarousel" data-slide-to="1"></li>
+                        <li data-target="#PetraCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754041012/Things-to-Do-in-Petra-Ad-Deir-Trail-Wide-View_md3ft2.webp" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754045549/777902-2880x1800-desktop-hd-petra-jordan-background_ikbqx0.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754045551/palace-tomb-in-petra-jordan-21vgs80oceqmi8aw_qfoflc.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#PetraCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#PetraCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Petra</h1>
+                    <p class="detailed-view-card-description">
+                        Petra, often called the "Rose City", is an ancient archaeological wonder nestled in the rugged deserts of southern Jordan. Carved directly into pink sandstone cliffs by the Nabataeans over 2,000 years ago, it once thrived as a bustling hub for trade between Arabia, Egypt, and the Mediterranean.
+
+                        The journey into Petra begins through the narrow, winding gorge known as the Siq, where towering cliffs rise on either side, leading to the city's most iconic monument—the Treasury (Al-Khazneh). This majestic façade, sculpted with breathtaking precision, glows in hues of red and gold under the desert sun.
+
+                        But Petra is more than a single structure. It spans a vast area filled with temples, tombs, theatres, and ancient dwellings, all carved from the rock with astonishing skill. Ingenious water channels and dams show the Nabataeans’ mastery of desert survival.
+
+                        Though lost to the Western world for centuries, Petra was rediscovered in 1812 and is now a UNESCO World Heritage Site and one of the New Seven Wonders of the World. Walking through Petra is like walking through a dream—where history and nature blend into an unforgettable, silent city frozen in time. <a href="https://en.wikipedia.org/wiki/Petra">Petra, Jordan</a>
+                    </p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionRomanColosseumDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="RomanColosseumCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#RomanColosseumCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#RomanColosseumCarousel" data-slide-to="1"></li>
+                        <li data-target="#RomanColosseumCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042613/beautiful-shot-famous-roman-colosseum-amphitheater-breathtaking-sky-sunrise_181624-6998_p7lnb5.avif" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754050123/gettyimages-1415045088-640x640_f8dbum.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754050200/gettyimages-909939280-640x640_zyitpj.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#RomanColosseumCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#RomanColosseumCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Roman Colosseum</h1>
+                    <p class="detailed-view-card-description">
+                        The Roman Colosseum, also known as the Flavian Amphitheatre, is an enduring symbol of ancient Rome’s power, innovation, and architectural brilliance. Located in the heart of Rome, Italy, this massive elliptical structure was completed in 80 AD and could once hold up to 50,000 spectators.
+
+                        Built from stone and concrete, the Colosseum hosted grand spectacles—gladiator battles, wild animal hunts, and dramatic reenactments of legendary events—all meant to entertain and impress the Roman public. Its tiered seating, retractable awnings, and underground chambers were revolutionary for the time.
+
+                        The arena floor, now partially exposed, reveals the hypogeum—a complex maze of tunnels that once held animals, fighters, and stage machinery. Despite centuries of earthquakes, stone robbers, and pollution, the Colosseum still stands as one of the world’s greatest architectural achievements.
+
+                        Declared a UNESCO World Heritage Site and one of the New Seven Wonders of the World, the Colosseum is more than ruins—it’s a monument to a civilization that shaped the course of history. Visitors today walk its ancient corridors, imagining the roar of crowds and the drama of empire that once unfolded within its mighty walls.<a href="https://en.wikipedia.org/wiki/Colosseum">Roman Colosseum</a>
+                    </p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionChichenitzaDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="chichenitzaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#chichenitzaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#chichenitzaCarousel" data-slide-to="1"></li>
+                        <li data-target="#chichenitzaCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042423/istockphoto-537243905-612x612_synyen.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754052198/ancient-night-night-sky-starry-wallpaper-preview_b9g6a8.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754052255/free-video-3591014_u85spn.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#chichenitzaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#chichenitzaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Chichen Itza</h1>
+                    <p class="detailed-view-card-description">
+                        Chichen Itza is one of the most iconic and mysterious ancient cities of the Maya civilization, located in the Yucatán Peninsula of Mexico. Flourishing between the 9th and 13th centuries, it served as a major political, religious, and economic center.
+
+                        At its heart stands El Castillo (the Temple of Kukulcán), a massive pyramid that reflects the Mayans' incredible understanding of astronomy and mathematics. During the spring and autumn equinoxes, the sunlight creates a serpent-like shadow on the staircase—an awe-inspiring display of ancient engineering and cosmic alignment.
+
+                        Surrounding the pyramid are other marvels: the Great Ball Court, where sacred games were played; the Temple of Warriors; and the Sacred Cenote, believed to be used for offerings and rituals. The city's layout and structures reflect a deep connection between nature, the cosmos, and the spiritual world.
+
+                        Rediscovered and preserved over time, Chichen Itza is now a UNESCO World Heritage Site and one of the New Seven Wonders of the World. It continues to draw millions of visitors each year, standing as a silent guardian of Maya wisdom, mystery, and legacy. <a href="https://en.wikipedia.org/wiki/Chichen_Itza">Chichen Itza</a></p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionMachuPicchuDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="machuPicchuCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#machuPicchuCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#machuPicchuCarousel" data-slide-to="1"></li>
+                        <li data-target="#machuPicchuCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754042172/473780-machu-picchu-ultra-hd-desktop-background-wallpaper-for-4k-uhd-tv-widescreen-ultrawide-desktop-laptop-tablet-smartphone_v2flgc.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754051587/photo-1526392060635-9d6019884377_pyukid.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dmbek4ywu/image/upload/v1754051622/stunning-sunset-view-machu-picchu-ancient-inca-citadel-perched-high-andes-mountains_895651-1693_scxazf.avif" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#machuPicchuCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#machuPicchuCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Machu Picchu</h1>
+                    <p class="detailed-view-card-description">
+                        Machu Picchu is a 15th-century Incan citadel located high in the Andes Mountains of Peru, at an altitude of about 2,430 meters (7,970 feet).
+                        It is often called the “Lost City of the Incas” because it remained hidden from the outside world until its rediscovery by American historian Hiram Bingham in 1911.
+                        Built during the reign of the Inca emperor Pachacuti, the site is believed to have served as a royal estate or sacred religious site.
+                        The city is a marvel of engineering and architecture, featuring stone structures perfectly fitted without mortar, an impressive feat given its remote mountain location.
+                        Terraces carved into the mountain slope were used for agriculture and to prevent erosion.
+                        Machu Picchu includes over 150 buildings, such as temples, houses, storage rooms, and ceremonial structures.
+                        The Intihuatana stone, the Temple of the Sun, and the Room of the Three Windows are among its most famous landmarks.
+                        Its construction reflects deep knowledge of astronomy, engineering, and the natural environment.
+                        Surrounded by lush greenery and mist-covered peaks, it offers stunning panoramic views and an unforgettable experience.
+                        Despite its popularity, much about Machu Picchu remains a mystery, including its exact purpose and how it was built with such precision.
+                        In 1983, it was declared a UNESCO World Heritage Site for its cultural and historical significance.
+                        In 2007, it was named one of the New Seven Wonders of the World through a global poll.
+                        Today, it stands as a powerful symbol of Incan heritage and a global icon of ancient ingenuity and resilience.
+                        Accessible via the famous Inca Trail or by train, Machu Picchu attracts millions of visitors each year.
+                        It continues to inspire awe as one of the most extraordinary archaeological sites on Earth.<a href="https://en.wikipedia.org/wiki/Machu_Picchu">Machu Picchu</a>
+                    </p>
+                </div>
+            </div>
+            <button class="back-button" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
